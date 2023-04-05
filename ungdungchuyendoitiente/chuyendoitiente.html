@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="doitien.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <input id="sotien" type="text" placeholder="nhập số tiền cần đổi"/>
+            </td>
+            <td>
+                <select id="kieutien1">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select>
+            </td>
+            <td>
+                <select id="kieutien2">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="doitiente()">Convert</button>
+            </td>
+        </tr>
+    </table>
+    <h3>số tiền đổi được</h3>
+    <div id="ketqua">0</div>
+</body>
+</html>
